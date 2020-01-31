@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+</head>
+<body>
+<h1>hello!</h1>
+<form>
+    <input name="name" id="text" value="" type="text">
+    <input name="nameb" id="textb" value="" type="text">
+    <input name="clear" id="clear" type="button" value="清除">
+</form>
+</body>
+<script>
+    window.onload = function () {
+        var name = document.getElementById('text');
+        var clear = document.getElementById('clear');
+        clear.addEventListener('touchend',function (e) {
+            name.value='';
+            e.stopPropagation();
+            e.preventDefault();
+            return false;
+        },false)
+    }
+</script>
+</html>
