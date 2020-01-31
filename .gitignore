@@ -6,3 +6,4 @@
 .idea/stack.iml
 .idea/vcs.xml
 .idea/vcs.xml
+*node_modules/
